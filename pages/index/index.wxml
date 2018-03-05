@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container2">
+  <!-- <button class='button' bindtap='tap'>点击</button>   -->
+  <view class="header">
+    <image class='header-bg' src='../../images/index/index_bg.jpeg'></image>
+    <text class='header-location'>{{location}}</text>
+    <text class='header-temperature'>{{temperature}}℃</text>
+    <text class='header-detail'>{{info}}</text>
+    <text class='header-other'>{{wind}} {{humidity}}</text> 
+  </view> 
+  <scroll-view class="scrollView" scroll-x="true">
+    <view wx:for="{{array}}" wx:for-item="itemName" class='item'>
+      <text class='item-time'>{{itemName.date}}</text>
+      <text class='item-weather'>{{itemName.cond_txt_d}}</text>
+      <text class='item-temperature'>{{itemName.tmp_max}}\{{itemName.tmp_min}}℃</text>
+      <view class='item-line'></view>
+    </view>
+    
+  </scroll-view>
+  <modal hidden="{{hidden}}" title="提示" confirm-text="确定" no-cancel="true" bindconfirm="confirm">
+    获取位置权限失败,默认上海市浦东新区的天气
+  </modal>
+  <view class='bottom'>
+    <text class='bottom-tips'>数据来源:和风天气</text>
+  </view>
+</view>
+

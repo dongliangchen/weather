@@ -1,0 +1,141 @@
+/**index.wxss**/
+
+
+.container2 {
+  /* 1334 */
+  height: 1240rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;  */
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+.header {
+  width: 750rpx;
+  height: 1040rpx;
+  /* border-top: 1rpx solid #dddcdc; */
+  /* display: flex; */
+  background-color: black;
+  /* font-size: 15px;
+  background-color: #f7f7f7;
+  z-index: 9999;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+   */
+  /* position: absolute; 
+  top: 0;  */
+}
+.header-bg {
+  width: 750rpx;
+  height: 1040rpx;
+  mode: scaleToFill;
+  z-index: 1;
+  position: absolute;  
+}
+.header-location {
+  z-index: 2;
+  position: absolute;
+  top: 20rpx;
+  left: 10rpx;
+  right: 10rpx;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+}
+.header-temperature {
+  z-index: 2;
+  position: absolute;
+  top: 300rpx;
+  left: 10rpx;
+  right: 10rpx;
+  color: black;
+  text-align: center;
+  font-size: 36px;
+}
+.header-detail {  
+  z-index: 2;
+  position: absolute;
+  top: 400rpx;
+  left: 10rpx;
+  right: 10rpx;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+}
+.header-other {
+  z-index: 2;
+  position: absolute;
+  top: 460rpx;
+  left: 10rpx;
+  right: 10rpx;
+  color: black;
+  text-align: center;
+  font-size: 11px;
+}
+
+.scrollView {
+  width: 100%;
+  height: 160rpx;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+  background-color: white;
+  padding: 0;
+  box-sizing: border-box;
+  /* 必须要  */
+  white-space: nowrap; 
+}
+.item {
+  display: inline-block;
+  /* 父级设置这个属性,子元素会相对父级定位 */
+  transform: translate(0,0);
+  width: 50%;
+  height: 160rpx;
+  background-color: white;
+}
+.item-time {
+  position: absolute;
+  font-size: 11px;
+  top: 20rpx;
+  left: 20rpx;
+}
+.item-weather {
+  position: absolute;
+  font-size: 11px;
+  bottom: 20rpx;
+  left: 20rpx;
+}
+.item-temperature {
+  position: absolute;
+  font-size: 11px;
+  top: 20rpx;
+  right: 20rpx;
+}
+.item-line {
+  position: absolute;
+  width: 1px;
+  top: 35rpx;
+  bottom: 35rpx;
+  /* right: 1px; */
+  background-color: gainsboro;
+}
+
+/* 底部 */
+.bottom {
+  background-color: gainsboro;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-tips {
+  color: grey;
+  text-align: center;
+  font-size: 10px;
+}
